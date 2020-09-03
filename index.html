@@ -15,9 +15,7 @@
   <div class="container">
     <div class="header">
       <div class="title">
-        <h1>rock</h1>
-        <h1>paper</h1>
-        <h1>scissors</h1>
+        <img src="./images/logo.svg" alt="game logo">
       </div>
       <div class="score">
         <p>score</p>
@@ -25,18 +23,30 @@
       </div>
     </div>
     <div class="content">
-      <img src="./images/bg-triangle.svg" alt="background triangle">
-      <div class="icon paper-icon">
-        <img src="./images/icon-paper.svg" alt="paper icon">
+      <img class="bg-triangle" src="./images/bg-triangle.svg" alt="background triangle">
+      <div class="icon-first-row">
+        <div class="border-area paper-icon">
+          <div class="icon">
+            <img src="./images/icon-paper.svg" alt="paper icon">
+          </div>
+        </div>
+        <div class="border-area scissors-icon">
+          <div class="icon">
+            <img src="./images/icon-scissors.svg" alt="scissors icon">
+          </div>
+        </div>
       </div>
-      <div class="icon scissors-icon">
-        <img src="./images/icon-scissors.svg" alt="scissors icon">
-      </div>
-      <div class="icon rock-icon">
-        <img src="./images/icon-rock.svg" alt="rock icon">
+      <div class="icon-second-row">
+        <div class="border-area rock-icon">
+          <div class="icon">
+            <img src="./images/icon-rock.svg" alt="rock icon">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <p class="rules">rules</p>
+    </div>
   </div>
 </body>
 </html>
