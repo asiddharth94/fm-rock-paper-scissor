@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
-  <link rel="stylesheet" href="./styles.css">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-  
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <div class="title">
-        <img src="./images/logo.svg" alt="game logo">
-      </div>
-      <div class="score">
-        <p>score</p>
-        <p>12</p>
-      </div>
-    </div>
-    <div class="content">
-      <img class="bg-triangle" src="./images/bg-triangle.svg" alt="background triangle">
-      <div class="icon-first-row">
-        <div class="border-area paper-icon">
-          <div class="icon">
-            <img src="./images/icon-paper.svg" alt="paper icon">
-          </div>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <img src="./images/logo.svg" alt="game logo" />
         </div>
-        <div class="border-area scissors-icon">
-          <div class="icon">
-            <img src="./images/icon-scissors.svg" alt="scissors icon">
-          </div>
+        <div class="score">
+          <p>score</p>
+          <p>0</p>
         </div>
       </div>
-      <div class="icon-second-row">
-        <div class="border-area rock-icon">
-          <div class="icon">
-            <img src="./images/icon-rock.svg" alt="rock icon">
+      <div class="content">
+        <img
+          class="bg-triangle"
+          src="./images/bg-triangle.svg"
+          alt="background triangle"
+        />
+        <div class="icon-first-row">
+          <div id="paper" class="border-area paper-icon">
+            <div class="icon">
+              <img src="./images/icon-paper.svg" alt="paper icon" />
+            </div>
+          </div>
+          <div id="scissors" class="border-area scissors-icon">
+            <div class="icon">
+              <img src="./images/icon-scissors.svg" alt="scissors icon" />
+            </div>
+          </div>
+        </div>
+        <div class="icon-second-row">
+          <div id="rock" class="border-area rock-icon">
+            <div class="icon">
+              <img src="./images/icon-rock.svg" alt="rock icon" />
+            </div>
           </div>
         </div>
       </div>
+      <div class="game-info">
+        <div class="player-label">
+          <p>You chose:<span class="selection player-selection"></span></p>
+        </div>
+        <div class="comp-label">
+          <p>Computer chose:<span class="selection comp-selection"></span></p>
+        </div>
+      </div>
+      <div class="footer">
+        <!-- <p class="rules">rules</p> -->
+        <p class="winner-label"></p>
+      </div>
     </div>
-    <div class="footer">
-      <p class="rules">rules</p>
-    </div>
-  </div>
-</body>
+  </body>
+  <script src="./main.js"></script>
 </html>
